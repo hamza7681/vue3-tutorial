@@ -1,5 +1,6 @@
 import CartViewVue from '@/views/CartView.vue'
 import HomeViewVue from '@/views/HomeView.vue'
+import LoginViewVue from '@/views/LoginView.vue'
 import ProductDetailViewVue from '@/views/ProductDetailView.vue'
 import { createRouter, createWebHistory } from 'vue-router'
 
@@ -17,6 +18,10 @@ const router = createRouter({
     {
       path: '/product/:name',
       component: ProductDetailViewVue
+    },
+    {
+      path: '/login',
+      component: LoginViewVue
     }
   ]
 })
